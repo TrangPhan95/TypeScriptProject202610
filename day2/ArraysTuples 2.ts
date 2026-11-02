@@ -1,4 +1,4 @@
-function filterAndCleanElementTexts(texts: string[]): string[]{
+function filterAndCleanElementTextsss(texts: string[]): string[]{
     return [...new Set( //Loại bỏ các phần tử trùng lặp
         //[...] chuyển Set thành mảng
         texts
@@ -54,7 +54,7 @@ const validAdmins = getValidAdminUsers(testUsers);// Gọi hàm và lưu kết q
 
 type HeaderPair = [string, string];//Định nghĩa kiểu dữ liệu HeaderPair là một mảng gồm hai phần tử, cả hai đều là chuỗi (string)
 
-function convertHeadersToObject(
+function convertHeadersToObjectt(
   headers: HeaderPair[]
 ): Record<string, string> { //Record<string, string> đại diện cho một đối tượng có các khóa là chuỗi (string) và các giá trị cũng là chuỗi (string). 
     //Nó được sử dụng để định nghĩa một đối tượng mà bạn biết trước rằng các khóa sẽ là chuỗi và các giá trị tương ứng cũng sẽ là chuỗi.
@@ -69,6 +69,6 @@ const headers: HeaderPair[] = [
   ["Content-Type", "application/json"]
 ];
 
-const headerObject = convertHeadersToObject(headers);
+const headerObject = convertHeadersToObjectt(headers);
 
 console.log(headerObject);
